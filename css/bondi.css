@@ -1,4 +1,53 @@
+:root{
+    --main-color:#082781;
+    --main-light-color:#0377ee;
+    --second-color:#0d41d6;
+    --complement-color:#a3bd13;
+    --split-complemently-color:#7a0881;
+}
 body{
     font-family: 'Amiri Quran', serif;
     font-family: 'Roboto', sans-serif;
+}
+.main-btn,
+.main-btn:hover{
+    background-color: var(--split-complemently-color);
+    color: yellow;
+    padding: .5rem 1rem;
+}
+
+/* NavBar */
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--complement-color);
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    color: var(--complement-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--complement-color);
+}
+.navbar .search svg{
+    color: var(--complement-color);
+}
+
+/* Landing */
+.landing{
+    background-color: var(--main-color);
+    min-height: calc(100vh - 92px);
 }
