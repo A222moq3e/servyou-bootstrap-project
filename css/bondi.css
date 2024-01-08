@@ -88,6 +88,11 @@ body{
 .our-services{
     background-color: var(--icon-color);
 }
+.our-services ul {  
+    max-width: 100%;
+    overflow-x: scroll;
+    justify-content: center;
+}
 .our-services ul .active{
     background-color: var(--split-complemently-color);
     color: var(--complement-color);
@@ -156,9 +161,9 @@ body{
 .our-team .box h4{
     background-color: var(--complement-color);
 }
-.our-team .row > * {
+/* .our-team .row > * {
     animation: shift-right 3s;
-} 
+}  */
 /* project */
 .project{
     background-color: var(--main-color);
@@ -213,3 +218,9 @@ footer .content svg{
         transform: translateX(200%);
     }
 }
+@media only screen and (max-width: 780px) {
+    /* place here CSS for when the screen is less than 1000px wide */
+    .our-services ul {  
+        justify-content: start;
+    }
+  }
